@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex space-x-4">
               <Link href="/about" className="text-md font-medium hover:text-gray-900 transition">i.</Link>
               <Link href="/projects" className="text-md font-medium hover:text-gray-900 transition">ii.</Link>
-              <Link href="/music" className="text-md font-medium hover:text-gray-900 transition">iii.</Link>
+              <Link href="/contact" className="text-md font-medium hover:text-gray-900 transition">iii.</Link>
             </div>
           </nav>
         </header>
