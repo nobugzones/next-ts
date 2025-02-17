@@ -1,20 +1,16 @@
-import type { Config } from "tailwindcss";
+import { type Config } from "tailwindcss";
 
-export default {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+const config: Config = {
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: '1rem',
-        md: '1.5rem',
-        lg: '2rem'
-      }
-    }
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+        serif: ["var(--font-playfair)", "serif"],
+      },
+    },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
