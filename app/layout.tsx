@@ -42,11 +42,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       {/* Apply fonts globally by adding them to the className */}
-      <body className={`relative min-h-screen flex flex-col ${playfair.variable} ${inter.variable}`}>
-        {/* Home Link in Top-Left Corner */}
-        <Link href="/" className="fixed top-4 left-4 text-xl font-bold text-gray-900 hover:text-blue-500">
-          hi there.
-        </Link>
+      <body className={`relative min-h-screen flex flex-col bg-[#90Aead] ${playfair.variable} ${inter.variable}`}>
+
+        {/* Navigation Bar (Now Global) */}
+        <nav className="w-full max-w-5xl py-4 flex justify-between items-center px-6 mr-auto">
+        {/* Home Link */}
+            <Link href="/" className="fixed top-4 left-6 px-3 py-1 text-lg font-bold text-gray-900 hover:text-gray-900">
+              hi there.
+            </Link>
+
+            {/* Navigation Links */}
+            <div className="flex space-x-4 pr-4 ml-auto">
+            <Link href="/about" className="text-md font-medium hover:text-gray-900 transition">i.</Link>
+              <Link href="/projects" className="text-md font-medium hover:text-gray-900 transition">ii.</Link>
+              <Link href="/contact" className="text-md font-medium hover:text-gray-900 transition">iii.</Link>
+            </div>
+          </nav>
 
         {/* Page Content */}
         <main className="flex-grow">{children}</main>
