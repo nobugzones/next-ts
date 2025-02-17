@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-// Import new fonts
+// Import new fonts and define CSS variables
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
@@ -14,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Smith Project",
+  title: "hi there.",
   description: "Where one fails, another succeeds.",
   icons: {
     icon: "/favicon.ico", // Ensures Next.js loads your new favicon
@@ -36,19 +35,25 @@ export const metadata = {
   },
 };
 
-
 import Link from "next/link";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen">
+      {/* Apply fonts globally by adding them to the className */}
+      <body className={`relative min-h-screen flex flex-col ${playfair.variable} ${inter.variable}`}>
         {/* Home Link in Top-Left Corner */}
         <Link href="/" className="fixed top-4 left-4 text-xl font-bold text-gray-900 hover:text-blue-500">
           hi there.
         </Link>
 
-        {children} {/* This renders the current page */}
+        {/* Page Content */}
+        <main className="flex-grow">{children}</main>
+
+        {/* Footer */}
+        <footer className="w-full py-4 text-center bg-[#90Aead] text-gray-700 text-sm">
+          © Corey Smith 2025
+        </footer>
       </body>
     </html>
   );
