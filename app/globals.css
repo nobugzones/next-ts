@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Background Texture - Ensure Full Coverage */
+html, body, main {
+  background-color: #90Aead !important; /* Ensures color applies everywhere */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 12px 12px;
+  background-repeat: repeat;
+  min-height: 100vh; /* Forces full height */
+}
+
 /* Apply the custom fonts */
 body {
-  @apply font-serif; 
+  @apply font-serif;
 }
 
 h1, h2, h3 {

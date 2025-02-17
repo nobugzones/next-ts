@@ -8,6 +8,10 @@ export default function Home() {
         i am glad you are here.
         <span className="block mt-2 text-lg font-normal">
           Click on the <strong>i.</strong> to learn about the game of pickleball.
+          <br></br>
+          Click on the <strong>ii.</strong> to see my projects (coming soon!).
+          <br></br>
+          Click on the <strong>iii.</strong> to see my favorite songs. 
         </span>
       </p>
       </div>
