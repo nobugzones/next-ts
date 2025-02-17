@@ -14,15 +14,16 @@ const inter = Inter({
 
 export const metadata = {
   title: "hi there.",
-  description: "Where one fails, another succeeds.",
+  description: "Where one pup fails, another succeeds.",
+  metadataBase: new URL("https://thesmithproject.com"), // Fixes Open Graph URL resolution
   icons: {
     icon: "/favicon.ico", // Ensures Next.js loads your new favicon
   },
   openGraph: {
-    title: "Your Site Name",
-    description: "A short description of your site that appears in previews.",
-    url: "https://yourdomain.com",
-    siteName: "Your Site Name",
+    title: "hi there.",
+    description: "Where one pup fails, another succeeds.",
+    url: "https://thesmithproject.com",
+    siteName: "hi there.",
     images: [
       {
         url: "/preview-image.jpg", // Replace with your actual preview image
