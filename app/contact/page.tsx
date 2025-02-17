@@ -1,6 +1,6 @@
 export default function ContactPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6">
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 md:pt-24">
       <h1 className="text-5xl font-bold text-gray-900 mb-6">Music</h1>
 
       {/* Song 1 */}
@@ -9,7 +9,7 @@ export default function ContactPage() {
         <iframe 
           className="mt-4 rounded-lg w-full"
           src="https://open.spotify.com/embed/track/0PyLMfIydHY4SzngUV6Cq8?utm_source=generator"
-          width="100%" 
+          width="50%" 
           height="352" 
           frameBorder="0" 
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
@@ -23,7 +23,7 @@ export default function ContactPage() {
         <iframe 
           className="mt-4 rounded-lg w-full"
           src="https://open.spotify.com/embed/track/4cLC8gydI0O78g8chZugS4?utm_source=generator"
-          width="100%" 
+          width="50%" 
           height="352" 
           frameBorder="0" 
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
