@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Background Texture - Ensure Full Coverage */
-html, body, main {
+.bg-texture {
   background-color: #90Aead !important; /* Ensures color applies everywhere */
   background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
   background-size: 12px 12px;

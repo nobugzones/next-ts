@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-start bg-[#90Aead] text-center px-6 pt-20">
+      <div className="min-h-screen flex flex-col items-center justify-start text-center px-6 pt-20">
         {/* History Section */}
         <h1 className="text-4xl font-bold text-gray-900 mb-6">The History of Pickleball</h1>
         <p className="mt-4 text-lg text-gray-800 font-mono max-w-2xl leading-relaxed">

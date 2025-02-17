@@ -1,6 +1,6 @@
 export default function ContactPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#90Aead] text-center px-6">
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6">
       <h1 className="text-5xl font-bold text-gray-900 mb-6">Music</h1>
 
       {/* Song 1 */}

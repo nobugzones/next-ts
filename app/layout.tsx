@@ -45,26 +45,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       {/* Apply fonts globally by adding them to the className */}
       <body className={`relative min-h-screen flex flex-col ${playfair.variable} ${inter.variable}`}>
-        {/* Navigation Bar */}
-        <nav className="w-full max-w-5xl py-4 flex justify-between items-center px-6">
-          <Link 
-            href="/" 
-            className="fixed top-4 left-6 px-3 py-1 text-lg font-bold text-gray-900 hover:text-gray-900 
-                      bg-white md:bg-transparent rounded-lg shadow-md 
-                      sm:top-4 sm:left-4 sm:bg-opacity-80"
-          >
-            hi there.
-          </Link>
+        {/* Slim Header */}
+        <header className="fixed top-0 left-0 w-full h-12 bg-[#90Aead] shadow-md flex items-center px-6 z-50">
+          <nav className="w-full max-w-5xl flex justify-between items-center mx-auto">
+            <Link 
+              href="/" 
+              className="text-lg font-bold text-gray-900 hover:text-gray-900"
+            >
+              hi there.
+            </Link>
 
-          <div className="flex space-x-4 pr-4 ml-auto">
-            <Link href="/about" className="text-md font-medium hover:text-gray-900 transition">i.</Link>
-            <Link href="/projects" className="text-md font-medium hover:text-gray-900 transition">ii.</Link>
-            <Link href="/contact" className="text-md font-medium hover:text-gray-900 transition">iii.</Link>
-          </div>
-        </nav>
+            <div className="flex space-x-4">
+              <Link href="/about" className="text-md font-medium hover:text-gray-900 transition">i.</Link>
+              <Link href="/projects" className="text-md font-medium hover:text-gray-900 transition">ii.</Link>
+              <Link href="/music" className="text-md font-medium hover:text-gray-900 transition">iii.</Link>
+            </div>
+          </nav>
+        </header>
 
         {/* Page Content */}
-        <main className="flex-grow w-full min-h-screen">{children}</main>
+        <main className="flex-grow w-full min-h-screen bg-texture">{children}</main>
 
         {/* Footer */}
         <footer className="w-full py-4 text-center bg-transparent text-gray-700 text-sm">
