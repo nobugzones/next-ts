@@ -18,10 +18,18 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* Dog Image Above the Main Content */}
+      {/* Image and Text Container */}
+      {/* Center Content Lower on the Page */}
+      <div className="flex flex-col items-center justify-center min-h-screen pb-20 space-y-6">
+        <img src="/roaster.png" alt="Dog Icon" width={150} height={150} className="rounded-full" />
+        <p className="text-4xl font-bold text-gray-900">i am glad you are here.</p>
+      </div>
+
       {/* Main Section */}
       <section className="flex flex-col items-center justify-center flex-grow text-center">
         <div className="container">
-          <p className="text-4xl font-bold text-gray-900">i am glad you are here.</p>
+          <p className="text-4xl font-bold text-gray-900"></p>
         </div>
       </section>
     </div>
