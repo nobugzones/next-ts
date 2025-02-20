@@ -38,38 +38,31 @@ export const metadata = {
   }
 };
 
+
 import Link from "next/link";
+import Sidebar from "./components/Sidebar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      {/* Apply fonts globally by adding them to the className */}
-      <body className={`relative min-h-screen flex flex-col ${playfair.variable} ${inter.variable}`}>
-        {/* Slim Header */}
-        <header className="fixed top-0 left-0 w-full h-12 bg-[#90Aead] shadow-md flex items-center px-6 z-50">
-          <nav className="w-full max-w-5xl flex justify-between items-center mx-auto">
-            <Link 
-              href="/" 
-              className="text-lg font-bold text-gray-900 hover:text-gray-900"
-            >
-              hi there.
-            </Link>
+      <body className="relative min-h-screen flex">
+        <Sidebar /> {/* Sidebar now handles navigation */}
 
-            <div className="flex space-x-4">
-              <Link href="/about" className="text-md font-medium hover:text-gray-900 transition">i.</Link>
-              <Link href="/projects" className="text-md font-medium hover:text-gray-900 transition">ii.</Link>
-              <Link href="/contact" className="text-md font-medium hover:text-gray-900 transition">iii.</Link>
-            </div>
-          </nav>
+        <div className="flex flex-col w-full">
+          {/* Slim Header */}
+          <header className="fixed top-0 left-0 w-full h-12 bg-[#90Aead] shadow-md flex items-center px-6 z-50">
+          {/* Only "welcome." text (not clickable) */}
+          <span className="text-lg font-bold text-gray-900">welcome.</span>
         </header>
 
-        {/* Page Content */}
-        <main className="flex-grow w-full min-h-screen bg-texture">{children}</main>
+          {/* Page Content */}
+          <main className="flex-grow w-full min-h-screen bg-texture p-6">{children}</main>
 
-        {/* Footer */}
-        <footer className="w-full py-4 text-center bg-transparent text-gray-700 text-sm">
-          © Corey Smith 2025
-        </footer>
+          {/* Footer */}
+          <footer className="w-full py-4 text-center text-gray-700 text-sm">
+            © Corey Smith 2025
+          </footer>
+        </div>
       </body>
     </html>
   );
