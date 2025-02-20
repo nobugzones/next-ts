@@ -8,7 +8,7 @@ export default function HomePage() {
 
   // 🎵 Song Data Array
   const songs = [
-    { title: "You're Still Good to Me | The War Within", src: "https://open.spotify.com/embed/track/0PyLMfIydHY4SzngUV6Cq8?utm_source=generator" },
+    { title: "You&apos;re Still Good to Me | The War Within", src: "https://open.spotify.com/embed/track/0PyLMfIydHY4SzngUV6Cq8?utm_source=generator" },
     { title: "Hard Fought Hallelujah | Lake x Roll", src: "https://open.spotify.com/embed/track/4cLC8gydI0O78g8chZugS4?utm_source=generator" },
     { title: "For My Daughter | Kane Brown", src: "https://open.spotify.com/embed/track/2moC0T4mGwmP8dUDostr2g?utm_source=generator" },
     { title: "The Prodigal | Josiah Queen", src: "https://open.spotify.com/embed/track/6BqobW3pEDxEvgznbam8kv?utm_source=generator" } // ✅ Added New Song
@@ -36,14 +36,14 @@ export default function HomePage() {
       >
         <h2 className="text-4xl font-semibold mb-6">About Me</h2>
         <p className="text-lg leading-relaxed">
-          I’m passionate about building, creating, and bringing ideas to life. Welcome to my world.
+          I&apos;m passionate about building, creating, and bringing ideas to life. Welcome to my world.
         </p>
       </section>
 
 
       {/* Music Section */}
       <section className="py-32 px-8 text-center">
-        <h2 className="text-4xl font-semibold mb-6">What I'm Listening To</h2>
+        <h2 className="text-4xl font-semibold mb-6">What I&apos;m Listening To</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {songs.map((song, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition-transform">

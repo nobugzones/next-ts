@@ -1,16 +1,5 @@
-import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
-
-// Import new fonts and define CSS variables
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+import Sidebar from "./components/Sidebar";
 
 export const metadata = {
   title: "hi there.",
@@ -21,14 +10,14 @@ export const metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico"
   },
-  openGraph: {  // ✅ Moved inside metadata
+  openGraph: {
     title: "hi there.",
     description: "Where one pup fails, another succeeds.",
     url: "https://thesmithproject.com",
     siteName: "hi there.",
     images: [
       {
-        url: "/favicon.ico", // Replace with your actual preview image
+        url: "/favicon.ico",
         width: 1200,
         height: 630,
         alt: "Preview of your site",
@@ -37,10 +26,6 @@ export const metadata = {
     type: "website",
   }
 };
-
-
-import Link from "next/link";
-import Sidebar from "./components/Sidebar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -51,9 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex flex-col w-full">
           {/* Slim Header */}
           <header className="fixed top-0 left-0 w-full h-12 bg-[#90Aead] shadow-md flex items-center px-6 z-50">
-          {/* Only "welcome." text (not clickable) */}
-          <span className="text-lg font-bold text-gray-900">welcome.</span>
-        </header>
+            {/* Only "welcome." text (not clickable) */}
+            <span className="text-lg font-bold text-gray-900">welcome.</span>
+          </header>
 
           {/* Page Content */}
           <main className="flex-grow w-full min-h-screen bg-texture p-6">{children}</main>
