@@ -8,7 +8,7 @@ export default function HomePage() {
 
   // 🎵 Song Data Array
   const songs = [
-    { title: "You&apos;re Still Good to Me | The War Within", src: "https://open.spotify.com/embed/track/0PyLMfIydHY4SzngUV6Cq8?utm_source=generator" },
+    { title: "You're Still Good to Me | The War Within", src: "https://open.spotify.com/embed/track/0PyLMfIydHY4SzngUV6Cq8?utm_source=generator" },
     { title: "Hard Fought Hallelujah | Lake x Roll", src: "https://open.spotify.com/embed/track/4cLC8gydI0O78g8chZugS4?utm_source=generator" },
     { title: "For My Daughter | Kane Brown", src: "https://open.spotify.com/embed/track/2moC0T4mGwmP8dUDostr2g?utm_source=generator" },
     { title: "The Prodigal | Josiah Queen", src: "https://open.spotify.com/embed/track/6BqobW3pEDxEvgznbam8kv?utm_source=generator" } // ✅ Added New Song
